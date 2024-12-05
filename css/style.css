@@ -1,0 +1,140 @@
+:root{
+    --color_primary: #ff3143;
+    --color_secondary: #f50111;
+    --color_tertiary:#ff8371;
+    --color_background: #ec4764;
+    --color_font:#6f78ac;
+    --color_white:#ffffff;
+    --color_black: #000000;
+}
+
+*{
+    /* aqui é o corpo do site, tudo que eu fizer todos vao receber como padrao */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color_primary);
+    align-items: center;
+    padding: 20px;
+}
+
+#logo{
+    width: 100px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-right: 25px;
+    font-size: 1em;
+    font-weight: 200;
+    color: var(--color_white);
+    cursor: pointer;
+    align-items: center;
+}
+
+nav ul li label img{
+    width: 32px;
+    margin: 10px;
+}
+
+nav ul li:hover{
+    color: var(--color_font);
+}
+
+#banner{
+    /* toda vez que eu for chamar um id, eu coloco um # */
+    width: 100%;
+
+}
+
+#titulo{
+    text-align: center;
+    padding: 30px 0 30px 0;
+    color: var(--color_font);
+    background-color: var(--color_background);
+}
+
+#iconTitulo{
+    margin-right: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+#cardsPersonagens{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+}
+
+#cardsPersonagens .options .option{
+    padding: 1em;
+    letter-spacing: 0.02rem;
+    color: var(--color_black);
+    font-size: 1em;
+    
+    border-radius: 0.4rem;
+    border: 1px solid var(--color_black);
+    background-color: var(--color_primary);
+}
+
+#cardsPersonagens .cards div {
+    width: 250px;
+    cursor: pointer;
+    /* transição e tempo da animação */
+    transition: transform 0.3s ease;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10%;
+}
+
+#cardsPersonagens .cards div a img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+/* aqui vai rolar a animação do card crescendo/decrescendo */
+#cardsPersonagens .cards div :hover {
+    transform: scale(0.8);
+}
+
+#cardsPersonagens .cards div a h2{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 5px;
+    color: var(--color_font);
+    padding: 20px 0 20px 0;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: var(--color_primary);
+    color: var(--color_white);
+    padding: 40px;
+    text-align: center;
+}
+
+#autor{
+    color: var(--color_black);
+}
