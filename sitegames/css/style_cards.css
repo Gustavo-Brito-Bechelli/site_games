@@ -1,0 +1,100 @@
+:root{
+    --color_primaria: #cef8f1;
+    --color_primaria_2: #9ff7e8;
+    --color_secundaria: #0091ba11;
+    --color_terciaria: #28234c;
+    --color_quartaria: #faefb7;
+    --color_background: #001036;
+    --color_red_1: #c72644;
+    --color_red_2: #ff011f;
+    --color_red_3: #9c1827;
+    --color_black: #000000;
+    --color_white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color_background);
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+#logo{
+    width: 100px;
+}   
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+ 
+nav ul li{
+    margin-right: 40px;
+    font-size: 1em;
+    font-weight: 200;
+    color: var(--color_primaria);
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    color: var(--color_red_1);
+}
+/* Toda vez que eu for chamar um id vou usar um # */
+#banner{
+    width: 100%;
+}
+
+#titulo{
+    text-align: center;
+    padding: 30px 0 30px 0;
+    color: var(--color_primaria);
+    background-color: var(--color_background);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(/sitegames/assets/plano\ de\ fundo\ 2.png);
+    background-size: cover
+}
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section h2{
+    padding: 0.8em;
+    text-align: center;
+    color: var(--color_quartaria);
+}
+
+#descricao{
+    margin: 1em;
+    padding: 1.5em;
+    text-align: center;
+    color: var(--color_quartaria);
+}
+
+footer{
+    background-color: var(--color_background);
+    color: var(--color_primaria);
+    padding: 40px;
+    text-align: center;
+}
+ 
+#autor{
+    color: var(--color_red_2);
+}
